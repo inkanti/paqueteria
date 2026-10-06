@@ -14,7 +14,7 @@ const FREQUENCIES = [
     tagColor: 'bg-brand-red',
     borderColor: 'border-t-brand-red',
     description:
-      'Tu carga despega cada semana desde Colorado. Entrega en El Salvador de 3 a 7 días hábiles.',
+      'Tu carga despega cada semana desde Colorado. Entrega en El Salvador de 3 a 7 días hábiles. Tarifa fija: $10.00 por libra.',
   },
   {
     icon: '🚢',
@@ -24,7 +24,7 @@ const FREQUENCIES = [
     tagColor: 'bg-brand-blue2',
     borderColor: 'border-t-brand-blue',
     description:
-      'Dos salidas al mes para carga pesada y voluminosa. El mejor precio por libra del mercado.',
+      'Dos salidas al mes para carga pesada y voluminosa. Entrega estimada de 30 a 45 días.',
   },
 ];
 

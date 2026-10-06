@@ -32,21 +32,23 @@ export default function Hero() {
 
         {/* Título principal */}
         <h1 className="mx-auto mt-6 max-w-4xl text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-          Traemos tus compras de <span className="text-brand-yellow">USA</span> a{' '}
+          Traemos tus <span className="text-brand-yellow">encomiendas</span> de Denver, Colorado a{' '}
           <span className="text-brand-yellow">El Salvador</span>
         </h1>
 
         {/* Subtítulo */}
         <p className="mx-auto mt-5 max-w-2xl text-base text-white/85 sm:text-lg">
-          Refrigeradoras, cocinas, vehículos, electrodomésticos y más.
-          <span className="font-semibold text-white"> ¡Por cajas y por libras!</span> Salidas
-          quincenales.
+          Servicio en Denver y sus alrededores. Refrigeradoras, cocinas, vehículos,
+          electrodomésticos y más.
+          <span className="font-semibold text-white"> ¡Por cajas y por libras!</span>
         </p>
 
         {/* Botones CTA */}
         <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
-            href="#cotizar"
+            href={`${BUSINESS.whatsapp}?text=${encodeURIComponent('Hola, quiero cotizar mi envío 📦')}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full rounded-full bg-brand-red px-8 py-3.5 text-base font-bold shadow-xl transition-all hover:scale-105 hover:bg-brand-darkred sm:w-auto"
           >
             📦 Cotizar mi Envío
@@ -61,9 +63,9 @@ export default function Hero() {
 
         {/* Mini-indicadores de confianza */}
         <div className="mx-auto mt-12 flex max-w-2xl flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-white/80">
-          <span className="inline-flex items-center gap-1.5">✈️ Aéreo 3–7 días</span>
-          <span className="inline-flex items-center gap-1.5">🚢 Marítimo 15–30 días</span>
-          <span className="inline-flex items-center gap-1.5">📍 Rastreo Constante</span>
+          <span className="inline-flex items-center gap-1.5">✈️ Aéreo 3–7 días · $10/lb</span>
+          <span className="inline-flex items-center gap-1.5">🚢 Marítimo 30–45 días</span>
+          <span className="inline-flex items-center gap-1.5">🚚 Recolección a domicilio</span>
         </div>
       </div>
 

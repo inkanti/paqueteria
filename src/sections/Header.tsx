@@ -26,20 +26,14 @@ export default function Header() {
         scrolled ? 'shadow-lg' : 'shadow-sm'
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
-        {/* ── Logo ─────────────────────────────────────────── */}
-        <a href="#inicio" className="flex items-center gap-2.5" onClick={() => setMenuOpen(false)}>
-          <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-blue text-xl shadow-md">
-            ✈️
-          </span>
-          <span className="leading-tight">
-            <span className="block text-lg font-extrabold tracking-tight text-brand-blue">
-              {BUSINESS.name}
-            </span>
-            <span className="block text-xs font-bold uppercase tracking-widest text-brand-red">
-              {BUSINESS.nameSuffix}
-            </span>
-          </span>
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-2.5">
+        {/* ── Logo oficial (imagen) ──────────────────────────── */}
+        <a href="#inicio" className="flex items-center" onClick={() => setMenuOpen(false)}>
+          <img
+            src="/images/logo.png"
+            alt={`${BUSINESS.name} ${BUSINESS.nameSuffix} — Encomiendas a El Salvador`}
+            className="h-12 w-auto sm:h-14"
+          />
         </a>
 
         {/* ── Menú desktop ─────────────────────────────────── */}

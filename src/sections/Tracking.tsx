@@ -1,10 +1,10 @@
 import { useState, type FormEvent } from 'react';
 import Reveal from '../components/Reveal';
 import SectionHeading from '../components/SectionHeading';
-import { TRACKING_STAGES, type Shipment } from '../data/site';
+import { SHIPMENTS, TRACKING_STAGES, type Shipment } from '../data/site';
 
-/** URL de la API de Google Sheets */
-const SHEETS_API_URL = 'https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbwiHuqLYyBYRVLqpxKOqF1JXPeyQGLjM0sacFEcBTg3PMv7MS6peslOVXsO8JRCFFAvuA/exec';
+/** URL de la API de Google Sheets (Apps Script) */
+const SHEETS_API_URL = 'https://script.google.com/macros/s/AKfycbwiHuqLYyBYRVLqpxKOqF1JXPeyQGLjM0sacFEcBTg3PMv7MS6peslOVXsO8JRCFFAvuA/exec';
 
 /**
  * Tracking — ⭐ FEATURE PRINCIPAL: sistema de seguimiento en vivo.
@@ -35,6 +35,16 @@ export default function Tracking() {
     setError('');
     setResult(null);
 
+    // 1) Los códigos de demostración se resuelven con datos locales
+    //    (siempre funcionan, incluso sin internet)
+    const demo = SHIPMENTS.find((s) => s.tracking.toUpperCase() === code);
+    if (demo) {
+      setResult(demo);
+      setLoading(false);
+      return;
+    }
+
+    // 2) Trackings reales → API de Google Sheets (JSONP)
     try {
       const callbackName = `cb_${Date.now()}_${Math.floor(Math.random() * 10000)}`;
       const url = `${SHEETS_API_URL}?tracking=${encodeURIComponent(code)}&callback=${callbackName}`;

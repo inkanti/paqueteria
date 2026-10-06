@@ -13,16 +13,13 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 md:grid-cols-3">
         {/* ── Marca ──────────────────────────────────────────── */}
         <div>
-          <div className="flex items-center gap-2.5">
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-blue text-xl">
-              ✈️
-            </span>
-            <span className="leading-tight">
-              <span className="block text-lg font-extrabold">{BUSINESS.name}</span>
-              <span className="block text-xs font-bold uppercase tracking-widest text-brand-red">
-                {BUSINESS.nameSuffix}
-              </span>
-            </span>
+          {/* Logo sobre tarjeta blanca (el logo tiene fondo blanco) */}
+          <div className="inline-flex rounded-2xl bg-white p-3 shadow-md">
+            <img
+              src="/images/logo.png"
+              alt={`${BUSINESS.name} ${BUSINESS.nameSuffix}`}
+              className="h-14 w-auto"
+            />
           </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
             {BUSINESS.slogan}. Conectamos a las familias salvadoreñas con sus compras en USA desde{' '}

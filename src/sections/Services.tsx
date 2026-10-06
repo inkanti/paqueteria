@@ -9,18 +9,18 @@ const SERVICES = [
   {
     icon: '✈️',
     title: 'Envío por Avión',
-    time: '3–7 días',
+    time: '3–7 días · $10/lb tarifa fija',
     tag: 'Rápido',
     tagColor: 'bg-brand-red',
-    description: 'La opción más veloz para paquetes urgentes, documentos y compras ligeras.',
+    description: 'La opción más veloz: salidas semanales y tarifa fija de $10.00 por libra.',
   },
   {
     icon: '🚢',
     title: 'Envío por Barco',
-    time: '15–30 días',
+    time: '30–45 días',
     tag: 'Económico',
     tagColor: 'bg-brand-blue2',
-    description: 'Ideal para carga pesada y voluminosa al mejor precio por libra.',
+    description: 'Ideal para carga pesada y voluminosa. Salidas quincenales al mejor precio.',
   },
   {
     icon: '📦',

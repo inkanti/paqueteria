@@ -15,7 +15,7 @@ export default function RouteMap() {
         aria-hidden
         className="absolute inset-0 opacity-[0.35]"
         style={{
-          backgroundImage: 'radial-gradient(circle, #1565C0 1.2px, transparent 1.2px)',
+          backgroundImage: 'radial-gradient(circle, #E84B1C 1.2px, transparent 1.2px)',
           backgroundSize: '26px 26px',
         }}
       />
@@ -82,7 +82,7 @@ export default function RouteMap() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             {[
               '✈️ Avión 3–7 días',
-              '🚢 Barco 15–30 días',
+              '🚢 Barco 30–45 días',
               '📦 Cajas y libras',
               '🚗 Vehículos',
             ].map((item) => (

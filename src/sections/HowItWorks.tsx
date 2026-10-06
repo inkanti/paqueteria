@@ -5,28 +5,40 @@ import { BUSINESS } from '../data/site';
 /**
  * HowItWorks — 4 pasos visuales con números, iconos y flechas
  * conectoras. Animación escalonada al hacer scroll (fade-in).
+ *
+ * Paso 1: el cliente lleva el paquete a Denver O pide recolección
+ *         a domicilio (él decide).
+ * Paso 4: encomiendas grandes → puerta de la casa; pequeñas →
+ *         ruta de entrega en puntos establecidos.
  */
 const STEPS = [
   {
-    icon: '🛒',
-    title: 'Compra en USA',
-    description: `Compra en línea o en tienda y envía todo a nuestra bodega: ${BUSINESS.address}.`,
+    icon: '📦',
+    title: 'Traé tu paquete o pedí recolección',
+    description: `Llevalo a nuestra bodega en ${BUSINESS.address} o solicitá que lo recolectemos en Denver y sus alrededores. ¡Vos decidís!`,
   },
   {
     icon: '📥',
     title: 'Recibimos tu Carga',
-    description: 'Recibimos, revisamos y consolidamos tus paquetes para optimizar tu envío.',
+    description: 'Recibimos, revisamos y consolidamos tus encomiendas para optimizar tu envío.',
   },
   {
     icon: '💳',
     title: 'Pagás y Elegís',
-    description: 'Elegís entre avión (rápido) o barco (económico) y pagás de forma fácil y segura.',
+    description: 'Avión con salidas semanales (3–7 días) o barco cada 15 días (30–45 días). Pagás fácil y seguro.',
   },
   {
     icon: '🏠',
-    title: 'Recibís en Casa',
-    description: 'Entregamos tu carga en la puerta de tu casa, en cualquier parte de El Salvador.',
+    title: 'Recibís en El Salvador',
+    description: 'Encomiendas grandes: hasta la puerta de tu casa. Pequeñas: por ruta de entrega en puntos establecidos.',
   },
+];
+
+/** Ciudades de la ruta de entrega en El Salvador (según avisos oficiales) */
+const DELIVERY_TOWNS = [
+  'San Salvador', 'Santa Ana', 'San Miguel', 'Sonsonate', 'Ahuachapán',
+  'Chalatenango', 'Usulután', 'Zacatecoluca', 'San Vicente', 'Quezaltepeque',
+  'Metapán', 'El Litoral (Mizata a Cara Sucia)',
 ];
 
 export default function HowItWorks() {
@@ -36,7 +48,7 @@ export default function HowItWorks() {
         <SectionHeading
           kicker="Proceso simple"
           title="¿Cómo Funciona?"
-          subtitle="En 4 pasos tus compras viajan de Denver a la puerta de tu casa."
+          subtitle="En 4 pasos tus encomiendas viajan de Denver a El Salvador."
         />
 
         <ol className="relative grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
@@ -67,6 +79,31 @@ export default function HowItWorks() {
             </Reveal>
           ))}
         </ol>
+
+        {/* ── Ruta de entrega en El Salvador ─────────────────── */}
+        <Reveal delay={200}>
+          <div className="mt-12 rounded-3xl bg-white p-6 shadow-sm sm:p-8">
+            <p className="text-center text-sm font-bold uppercase tracking-widest text-brand-red">
+              🚚 Ruta de entrega y recolección en El Salvador
+            </p>
+            <p className="mt-2 text-center text-sm text-slate-600">
+              Las encomiendas pequeñas se entregan en estos puntos establecidos:
+            </p>
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
+              {DELIVERY_TOWNS.map((town) => (
+                <span
+                  key={town}
+                  className="rounded-full bg-brand-gray px-3.5 py-1.5 text-xs font-semibold text-brand-blue"
+                >
+                  {town}
+                </span>
+              ))}
+              <span className="rounded-full bg-brand-yellow/20 px-3.5 py-1.5 text-xs font-bold text-brand-ink">
+                ¡y más!
+              </span>
+            </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

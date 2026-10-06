@@ -5,17 +5,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        /* ── Paleta de marca: Alvaro Flores Cargo Express ────────────── */
+        /* ── Paleta de marca: Alvaro Flores Express ────────────────────
+           Identidad de las publicaciones: ROJO + NARANJA.
+           (rojo de la ola de la publicidad + naranja del avión del logo) */
         brand: {
-          blue: "#0D47A1",      // Azul oscuro (primario)
-          blue2: "#1565C0",     // Azul medio
-          red: "#D32F2F",       // Rojo (acentos / CTAs)
-          darkred: "#B71C1C",   // Rojo oscuro (hover de CTAs)
-          yellow: "#FFC107",    // Amarillo (precios / destacados)
+          blue: "#B31217",      // Rojo profundo (títulos, acentos principales)
+          blue2: "#E84B1C",     // Naranja del avión (degradados, tags)
+          red: "#C81018",       // Rojo de la ola de la publicidad (CTAs)
+          darkred: "#8C0D12",   // Rojo oscuro (hover de CTAs)
+          yellow: "#FFC107",    // Amarillo (badge "12 años", destacados)
           whatsapp: "#25D366",  // Verde WhatsApp
           gray: "#F8F9FA",      // Gris claro (fondos)
-          navy: "#0A2A5E",      // Azul muy oscuro (fondos de sección)
-          ink: "#071A38",       // Casi negro-azulado (footer)
+          navy: "#7A0F14",      // Rojo vino profundo (fondos de sección)
+          ink: "#45080B",       // Casi negro-vino (footer)
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -1,6 +1,6 @@
 /**
  * ─────────────────────────────────────────────────────────────
- *  DATOS CENTRALES DEL SITIO — Alvaro Flores Cargo Express
+ *  DATOS CENTRALES DEL SITIO — Alvaro Flores Express
  *  Edita este archivo para actualizar teléfonos, precios,
  *  testimonios o números de tracking sin tocar los componentes.
  * ─────────────────────────────────────────────────────────────
@@ -9,7 +9,7 @@
 /** Información del negocio */
 export const BUSINESS = {
   name: 'Alvaro Flores',
-  nameSuffix: 'Cargo Express',
+  nameSuffix: 'Express',
   slogan: 'Servicio de Encomiendas — Por Cajas y Por Libras',
   origin: 'Denver, Colorado, USA',
   destination: 'Todo El Salvador',
@@ -22,44 +22,23 @@ export const BUSINESS = {
   facebook: 'https://facebook.com/alvarofloresencomiendaselsalvador',
   instagram: 'https://instagram.com/',
   email: 'info@alvaroflorescargo.com',
-  schedule: 'Salidas quincenales (aéreo y marítimo)',
+  schedule: 'Avión: salidas semanales · Barco: salidas quincenales',
 } as const;
 
-/** Precios usados por la calculadora (ficticios, reemplazar luego) */
+/** Tarifas del negocio — el envío aéreo tiene TARIFA FIJA por libra */
 export const PRICING = {
-  airPerLb: 3.5, // USD por libra — avión
-  seaPerLb: 1.8, // USD por libra — barco
-  boxDiscount: 0.15, // 15% de descuento por modalidad "Por Caja"
-  minLb: 1,
-  maxLb: 1000,
+  airPerLb: 10.0, // USD por libra — avión (tarifa fija)
+  seaNote: 'Tarifa marítima según volumen — consultar por WhatsApp',
 } as const;
 
-/** Tarifas fijas de las cajas de ejemplo */
+/** Cajas por barco — medidas (pulgadas) y precios oficiales.
+ *  Nota: la medida 30×30×30 fue reemplazada por 30×24×26 al mismo
+ *  precio ($450). Todas incluyen entrega hasta la puerta de la casa. */
 export const BOXES = [
-  {
-    name: 'Caja Pequeña',
-    capacity: 'Hasta 20 lbs',
-    price: 45,
-    tag: 'Popular',
-    description: 'Ideal para ropa, zapatos, juguetes y regalos pequeños.',
-    icon: '📦',
-  },
-  {
-    name: 'Caja Mediana',
-    capacity: 'Hasta 50 lbs',
-    price: 85,
-    tag: null,
-    description: 'Perfecta para electrodomésticos pequeños y víveres.',
-    icon: '🗳️',
-  },
-  {
-    name: 'Caja Grande',
-    capacity: 'Hasta 100 lbs',
-    price: 150,
-    tag: null,
-    description: 'Para compras grandes, herramientas y artículos del hogar.',
-    icon: '🧳',
-  },
+  { size: '22 × 22 × 22', unit: 'pulgadas', price: 350, tag: null },
+  { size: '25 × 25 × 25', unit: 'pulgadas', price: 375, tag: null },
+  { size: '28 × 28 × 28', unit: 'pulgadas', price: 400, tag: 'Popular' },
+  { size: '30 × 24 × 26', unit: 'pulgadas', price: 450, tag: 'Más grande' },
 ] as const;
 
 /** Testimonios (datos ficticios de ejemplo — se muestran en orden aleatorio) */
@@ -173,7 +152,7 @@ export const SHIPMENTS: Shipment[] = [
 export const FAQS = [
   {
     q: '¿Cuánto cuesta el envío por libra?',
-    a: 'El envío aéreo cuesta $3.50 por libra y el marítimo $1.80 por libra. Si envías por caja completa recibes un 15% de descuento sobre el total. Usa nuestra calculadora para obtener un estimado inmediato.',
+    a: 'El envío por avión tiene una tarifa fija de $10.00 por libra. Para envíos marítimos y por caja, la tarifa depende del volumen: escribinos por WhatsApp y te cotizamos al instante.',
   },
   {
     q: '¿Puedo enviar un vehículo?',
@@ -181,7 +160,7 @@ export const FAQS = [
   },
   {
     q: '¿Cuánto tiempo tarda en llegar?',
-    a: 'Los envíos aéreos tardan de 3 a 7 días y los marítimos de 15 a 30 días. Tenemos salidas quincenales en ambas modalidades, y puedes rastrear tu carga en tiempo real desde esta misma página.',
+    a: 'Los envíos aéreos tardan de 3 a 7 días y los marítimos de 30 a 45 días. Los aviones salen semanalmente y los barcos quincenalmente; podés rastrear tu carga desde esta misma página.',
   },
   {
     q: '¿Cómo pago desde El Salvador?',
@@ -202,7 +181,6 @@ export const NAV_LINKS = [
   { label: 'Inicio', href: '#inicio' },
   { label: 'Cómo Funciona', href: '#como-funciona' },
   { label: 'Servicios', href: '#servicios' },
-  { label: 'Cotizar', href: '#cotizar' },
   /*{ label: 'Seguimiento', href: '#seguimiento' },*/
   { label: 'FAQ', href: '#faq' },
   { label: 'Contacto', href: '#contacto' },

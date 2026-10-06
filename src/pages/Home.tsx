@@ -1,19 +1,20 @@
 /**
- * Home — página única (one-page) de Alvaro Flores Cargo Express.
+ * Home — página única (one-page) de Alvaro Flores Express.
  * Ensambla todas las secciones en el orden definido por el cliente.
+ * (La calculadora fue retirada a petición del cliente — oct 2026)
  */
 import TopBar from '../sections/TopBar';
 import Header from '../sections/Header';
 import Hero from '../sections/Hero';
 import HowItWorks from '../sections/HowItWorks';
 import Services from '../sections/Services';
-import Calculator from '../sections/Calculator';
 import Boxes from '../sections/Boxes';
 import RouteMap from '../sections/RouteMap';
 import Products from '../sections/Products';
+import Gallery from '../sections/Gallery';
 import Frequency from '../sections/Frequency';
 import Testimonials from '../sections/Testimonials';
-
+// import Tracking from '../sections/Tracking'; // ⏸️ Rastreo en vivo desactivado por ahora (oct 2026)
 import Faq from '../sections/Faq';
 import Contact from '../sections/Contact';
 import Footer from '../sections/Footer';
@@ -38,17 +39,17 @@ export default function Home() {
         {/* 5. Servicios (4 tarjetas) */}
         <Services />
 
-        {/* 6. Calculadora de envío interactiva */}
-        <Calculator />
-
-        {/* 7. Ejemplos de cajas */}
+        {/* 6. Ejemplos de cajas */}
         <Boxes />
 
-        {/* 8. Mapa de ruta Denver → El Salvador */}
+        {/* 7. Mapa de ruta Denver → El Salvador */}
         <RouteMap />
 
-        {/* 9. ¿Qué podemos traerte? */}
+        {/* 8. ¿Qué podemos traerte? (con fotos reales) */}
         <Products />
+
+        {/* 9. Galería de productos en movimiento */}
+        <Gallery />
 
         {/* 10. Frecuencia de salidas */}
         <Frequency />
@@ -56,7 +57,10 @@ export default function Home() {
         {/* 11. Testimonios (orden aleatorio en cada carga) */}
         <Testimonials />
 
-        
+        {/* 12. ⭐ Sistema de seguimiento en vivo — DESACTIVADO por ahora.
+            Para reactivarlo: descomentar la importación y esta línea.
+        <Tracking />
+        */}
 
         {/* 13. Preguntas frecuentes */}
         <Faq />

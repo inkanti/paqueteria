@@ -79,12 +79,6 @@ export default function Contact() {
                 value={BUSINESS.phoneSV}
                 href={BUSINESS.phoneSVHref}
               />
-              <ContactRow
-                icon="✉️"
-                label="Email"
-                value={BUSINESS.email}
-                href={`mailto:${BUSINESS.email}`}
-              />
               <ContactRow icon="🗓️" label="Salidas" value={BUSINESS.schedule} />
 
               {/* Redes sociales */}
