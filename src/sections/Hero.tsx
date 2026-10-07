@@ -35,8 +35,8 @@ export default function Hero() {
 
         <h1 className="mx-auto mt-6 max-w-4xl text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">
           Traemos tus <span className="text-brand-yellow">encomiendas</span> de Denver, Colorado a{' '}
-          <span className="text-brand-yellow">El Salvador</span> y llevamos encomiendas de{' '}
-          <span className="text-brand-yellow">El Salvador</span> a Denver, Colorado
+          <span className="text-brand-yellow">El Salvador</span> y 
+          <span className="text-brand-yellow">Viceversa</span> 
         </h1>
 
         {/* Subtítulo */}

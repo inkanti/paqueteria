@@ -25,7 +25,7 @@ const STEPS = [
   {
     icon: '💳',
     title: 'Pagás y Elegís',
-    description: 'Avión con salidas semanales (3–7 días) o barco cada 15 días (30–45 días). Pagás fácil y seguro.',
+    description: 'Avión con salidas semanales (3–7 días) o barco cada 15 días (45–60 días). Pagás fácil y seguro.',
   },
   {
     icon: '🏠',
