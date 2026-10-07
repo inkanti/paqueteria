@@ -1,4 +1,4 @@
-import { useEffect, useStatecompras } from 'react';
+import { useEffect, useState } from 'react';
 import { BUSINESS, NAV_LINKS } from '../data/site';
 
 /**

@@ -27,7 +27,7 @@ export default function Hero() {
         <p className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold tracking-wide backdrop-blur sm:text-sm">
           <Flag country="us" className="h-3.5 w-5" />
           <Flag country="sv" className="h-3.5 w-5" />
-          Servicio de Encomiendas Denver ↔ El Salvador  ↔ | ↔ El Salvador ↔ Denver
+          Servicio de Encomiendas Denver ↔ El Salvador y El Salvador ↔ Denver
         </p>
 
         {/* Título principal */}
@@ -36,7 +36,7 @@ export default function Hero() {
         <h1 className="mx-auto mt-6 max-w-4xl text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">
           Traemos tus <span className="text-brand-yellow">encomiendas</span> de Denver, Colorado a{' '}
           <span className="text-brand-yellow">El Salvador</span> y llevamos encomiendas de{' '}
-          <span className="text-brand-yellow">El Salvador</span> a Denver, Colorado...
+          <span className="text-brand-yellow">El Salvador</span> a Denver, Colorado
         </h1>
 
         {/* Subtítulo */}
