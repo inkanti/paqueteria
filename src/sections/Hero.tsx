@@ -27,13 +27,16 @@ export default function Hero() {
         <p className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold tracking-wide backdrop-blur sm:text-sm">
           <Flag country="us" className="h-3.5 w-5" />
           <Flag country="sv" className="h-3.5 w-5" />
-          Servicio de Encomiendas Denver ↔ El Salvador
+          Servicio de Encomiendas Denver ↔ El Salvador  ↔ | ↔ El Salvador ↔ Denver
         </p>
 
         {/* Título principal */}
+       
+
         <h1 className="mx-auto mt-6 max-w-4xl text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">
           Traemos tus <span className="text-brand-yellow">encomiendas</span> de Denver, Colorado a{' '}
-          <span className="text-brand-yellow">El Salvador</span>
+          <span className="text-brand-yellow">El Salvador</span> y llevamos encomiendas de{' '}
+          <span className="text-brand-yellow">El Salvador</span> a Denver, Colorado...
         </h1>
 
         {/* Subtítulo */}
@@ -64,8 +67,8 @@ export default function Hero() {
         {/* Mini-indicadores de confianza */}
         <div className="mx-auto mt-12 flex max-w-2xl flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-white/80">
           <span className="inline-flex items-center gap-1.5">✈️ Aéreo 3–7 días · $10/lb</span>
-          <span className="inline-flex items-center gap-1.5">🚢 Marítimo 30–45 días</span>
-          <span className="inline-flex items-center gap-1.5">🚚 Recolección a domicilio</span>
+          <span className="inline-flex items-center gap-1.5">🚢 Marítimo 45–60 días</span>
+          <span className="inline-flex items-center gap-1.5">🚚 Recolección a domicilio(si es servicio marítimo)</span>
         </div>
       </div>
 

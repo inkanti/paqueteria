@@ -13,13 +13,13 @@ export const BUSINESS = {
   slogan: 'Servicio de Encomiendas — Por Cajas y Por Libras',
   origin: 'Denver, Colorado, USA',
   destination: 'Todo El Salvador',
-  address: '4290 Crown Blvd, Denver CO 80239',
+  address: '5150 Colorado Blvd, Denver Colorado 80216',
   phoneUS: '720-292-8478',
   phoneUSHref: 'tel:+17202928478',
   phoneSV: '011 (503) 7841-5801',
   phoneSVHref: 'tel:+50378415801',
   whatsapp: 'https://wa.me/50378415801',
-  facebook: 'https://facebook.com/alvarofloresencomiendaselsalvador',
+  facebook: 'https://www.facebook.com/share/1CeuuKJE5Q/',
   instagram: 'https://instagram.com/',
   email: 'info@alvaroflorescargo.com',
   schedule: 'Avión: salidas semanales · Barco: salidas quincenales',
@@ -38,7 +38,7 @@ export const BOXES = [
   { size: '22 × 22 × 22', unit: 'pulgadas', price: 350, tag: null },
   { size: '25 × 25 × 25', unit: 'pulgadas', price: 375, tag: null },
   { size: '28 × 28 × 28', unit: 'pulgadas', price: 400, tag: 'Popular' },
-  { size: '30 × 24 × 26', unit: 'pulgadas', price: 450, tag: 'Más grande' },
+  { size: '30 × 24 × 36', unit: 'pulgadas', price: 450, tag: 'Más grande' },
 ] as const;
 
 /** Testimonios (datos ficticios de ejemplo — se muestran en orden aleatorio) */
@@ -152,7 +152,7 @@ export const SHIPMENTS: Shipment[] = [
 export const FAQS = [
   {
     q: '¿Cuánto cuesta el envío por libra?',
-    a: 'El envío por avión tiene una tarifa fija de $10.00 por libra. Para envíos marítimos y por caja, la tarifa depende del volumen: escribinos por WhatsApp y te cotizamos al instante.',
+    a: 'El envío por avión tiene una tarifa fija de $10.00 por libra (ya incluye aranceles aduanales). Para envíos marítimos y por caja, la tarifa depende del volumen: escribinos por WhatsApp y te cotizamos al instante.',
   },
   {
     q: '¿Puedo enviar un vehículo?',
@@ -160,11 +160,11 @@ export const FAQS = [
   },
   {
     q: '¿Cuánto tiempo tarda en llegar?',
-    a: 'Los envíos aéreos tardan de 3 a 7 días y los marítimos de 30 a 45 días. Los aviones salen semanalmente y los barcos quincenalmente; podés rastrear tu carga desde esta misma página.',
+    a: 'Los envíos aéreos tardan de 3 a 7 días y los marítimos de 45 a 60 días. Los aviones salen semanalmente y los barcos quincenalmente',
   },
   {
     q: '¿Cómo pago desde El Salvador?',
-    a: 'Aceptamos pagos en dólares: transferencias bancarias, depósitos, remesas y pagos en efectivo en nuestras oficinas de Denver. También puedes pagar contra entrega en El Salvador en envíos seleccionados.',
+    a: 'Aceptamos pagos en dólares: transferencias bancarias, pagos en efectivo en nuestras oficinas de Denver. También puedes pagar contra entrega en El Salvador en envíos seleccionados.',
   },
   {
     q: '¿Necesito pagar aduana?',
@@ -172,9 +172,11 @@ export const FAQS = [
   },
   {
     q: '¿Dónde dejo mis paquetes en Denver?',
-    a: 'Puedes entregar tus compras o cajas directamente en nuestra bodega: 4290 Crown Blvd, Denver CO 80239. Si compras en línea, usa esa dirección como dirección de envío y nosotros la recibimos por ti.',
+    a: 'Puedes entregar tus compras o cajas directamente en nuestra bodega: 5150 Colorado Blvd Denver, Denver Colorado 80216.',
   },
 ] as const;
+
+/**  4290 Crown Blvd, Denver CO 80239 **/
 
 /** Enlaces del menú de navegación */
 export const NAV_LINKS = [
