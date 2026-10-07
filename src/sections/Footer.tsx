@@ -22,13 +22,23 @@ export default function Footer() {
             />
           </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
-            {BUSINESS.slogan}. Conectamos a las familias salvadoreñas con sus compras en USA desde{' '}
-            {BUSINESS.origin}.
+            {BUSINESS.slogan}. Conectamos a las familias salvadoreñas con sus encomiendas de {' '}
+            {BUSINESS.origin}. y Viceversa
           </p>
+          
           <p className="mt-3 flex items-center gap-2" aria-label="De Estados Unidos a El Salvador">
-            <Flag country="us" className="h-4 w-6" />
-            <span aria-hidden className="text-white/60">➜</span>
-            <Flag country="sv" className="h-4 w-6" />
+            <div className="flex gap-8">
+            <div className="gap-2">
+              <Flag country="us" className="h-4 w-6" />
+              <span aria-hidden className="text-white/60">➜</span>
+              <Flag country="sv" className="h-4 w-6" />
+            </div> 
+            <div className="gap-2">           
+              <Flag country="sv" className="h-4 w-6" />
+              <span aria-hidden className="text-white/60">➜</span>
+              <Flag country="us" className="h-4 w-6" />
+            </div>
+            </div>
           </p>
         </div>
 

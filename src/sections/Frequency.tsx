@@ -24,7 +24,7 @@ const FREQUENCIES = [
     tagColor: 'bg-brand-blue2',
     borderColor: 'border-t-brand-blue',
     description:
-      'Dos salidas al mes para carga pesada y voluminosa. Entrega estimada de 30 a 45 días.',
+      'Dos salidas al mes para carga pesada y voluminosa. Entrega estimada de 45 a 60 días.',
   },
 ];
 

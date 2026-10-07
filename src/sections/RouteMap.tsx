@@ -32,7 +32,7 @@ export default function RouteMap() {
             {/* ══ Sentido 1: Denver → El Salvador ══ */}
             <div className="flex flex-col items-center gap-6 lg:flex-row lg:justify-between">
               {/* ── Origen ─────────────────────────────────────── */}
-              <div className="text-center lg:text-left">
+              <div className="text-center lg:flex-1 lg:text-left">
                 <Flag country="us" className="h-10 w-16 drop-shadow-md" />
                 <h3 className="mt-2 text-2xl font-extrabold text-brand-blue">Denver, Colorado</h3>
                 <p className="mt-1 text-sm font-medium text-slate-600">5150 Colorado Blvd, Denver Colorado 80216</p>
@@ -42,7 +42,7 @@ export default function RouteMap() {
               </div>
 
               {/* ── Flecha animada ─────────────────────────────── */}
-              <div className="flex flex-col items-center" aria-hidden>
+              <div className="flex shrink-0 flex-col items-center" aria-hidden>
                 <svg
                   viewBox="0 0 220 40"
                   className="hidden h-10 w-56 text-brand-red lg:block"
@@ -64,7 +64,7 @@ export default function RouteMap() {
               </div>
 
               {/* ── Destino ────────────────────────────────────── */}
-              <div className="text-center lg:text-right">
+              <div className="text-center lg:flex-1 lg:text-right">
                 <Flag country="sv" className="h-10 w-16 drop-shadow-md" />
                 <h3 className="mt-2 text-2xl font-extrabold text-brand-blue">El Salvador</h3>
                 <p className="mt-1 text-sm font-medium text-slate-600">Todo el territorio nacional</p>
@@ -80,7 +80,7 @@ export default function RouteMap() {
             {/* ══ Sentido 2: El Salvador → Denver ══ */}
             <div className="flex flex-col items-center gap-6 lg:flex-row lg:justify-between">
               {/* ── Origen ─────────────────────────────────────── */}
-              <div className="text-center lg:text-left">
+              <div className="text-center lg:flex-1 lg:text-left">
                 <Flag country="sv" className="h-10 w-16 drop-shadow-md" />
                 <h3 className="mt-2 text-2xl font-extrabold text-brand-blue">El Salvador</h3>
                 <p className="mt-1 text-sm font-medium text-slate-600">Todo el territorio nacional</p>
@@ -90,7 +90,7 @@ export default function RouteMap() {
               </div>
 
               {/* ── Flecha animada ─────────────────────────────── */}
-              <div className="flex flex-col items-center" aria-hidden>
+              <div className="flex shrink-0 flex-col items-center" aria-hidden>
                 <svg
                   viewBox="0 0 220 40"
                   className="hidden h-10 w-56 text-brand-blue lg:block"
@@ -112,7 +112,7 @@ export default function RouteMap() {
               </div>
 
               {/* ── Destino ────────────────────────────────────── */}
-              <div className="text-center lg:text-right">
+              <div className="text-center lg:flex-1 lg:text-right">
                 <Flag country="us" className="h-10 w-16 drop-shadow-md" />
                 <h3 className="mt-2 text-2xl font-extrabold text-brand-blue">Denver, Colorado</h3>
                 <p className="mt-1 text-sm font-medium text-slate-600">5150 Colorado Blvd, Denver Colorado 80216</p>
