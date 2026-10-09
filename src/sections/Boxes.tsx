@@ -57,6 +57,38 @@ export default function Boxes() {
             🏠 Todas las cajas se entregan hasta la puerta de la casa en El Salvador
           </p>
         </Reveal>
+
+        {/* ── Notas de tarifas especiales ────────────────────── */}
+        <Reveal delay={280}>
+          <div className="mx-auto mt-6 grid max-w-5xl gap-4 sm:grid-cols-3">
+            <div className="rounded-2xl border-2 border-dashed border-brand-red/40 bg-white p-5 text-center">
+              <p className="text-2xl" aria-hidden>📦</p>
+              <p className="mt-2 text-sm font-bold text-brand-blue">¿Ya tenés tu propia caja?</p>
+              <p className="mt-1 text-xs leading-relaxed text-slate-600">
+                Aceptamos cualquier otra medida de caja que el cliente ya tenga. Te cotizamos
+                según su tamaño.
+              </p>
+            </div>
+            <div className="rounded-2xl border-2 border-dashed border-brand-red/40 bg-white p-5 text-center">
+              <p className="text-2xl" aria-hidden>📄 💍 📱</p>
+              <p className="mt-2 text-sm font-bold text-brand-blue">
+                Documentos, oro y electrónicos
+              </p>
+              <p className="mt-1 text-xs leading-relaxed text-slate-600">
+                No se cobran por libra: consolas, laptops, celulares, tablets, joyería de oro y
+                documentos se cotizan por artículo.
+              </p>
+            </div>
+            <div className="rounded-2xl border-2 border-dashed border-brand-red/40 bg-white p-5 text-center">
+              <p className="text-2xl" aria-hidden>❄️</p>
+              <p className="mt-2 text-sm font-bold text-brand-blue">Electrodomésticos</p>
+              <p className="mt-1 text-xs leading-relaxed text-slate-600">
+                Cada uno tiene su precio según la marca y si es nuevo o usado: se cotizan en el
+                momento.
+              </p>
+            </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

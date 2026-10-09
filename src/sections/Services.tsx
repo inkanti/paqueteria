@@ -28,7 +28,7 @@ const SERVICES = [
     time: 'Precio fijo',
     tag: 'Ahorro',
     tagColor: 'bg-brand-yellow text-brand-ink',
-    description: 'Cajas con tarifa fija: llená tu caja sin preocuparte por el peso exacto.',
+    description: 'Cajas con tarifa fija. ¿Ya tenés tu propia caja? Aceptamos cualquier medida.',
   },
   {
     icon: '⚖️',
@@ -36,7 +36,7 @@ const SERVICES = [
     time: 'Pagás lo que pesa',
     tag: 'Justo',
     tagColor: 'bg-brand-blue',
-    description: 'Pesamos tu carga al momento y solo pagás por las libras reales.',
+    description: 'Pesamos tu carga y pagás lo exacto. Documentos, joyería de oro y electrónicos se cotizan por artículo.',
   },
 ];
 

@@ -21,7 +21,7 @@ const PRODUCTS = [
   {
     img: '/images/web/electrodomesticos.jpg',
     title: 'Electrodomésticos',
-    description: 'Licuadoras, procesadores, cafeteras y más para tu hogar.',
+    description: 'Cada uno tiene su precio según marca y si es nuevo o usado: se cotiza al momento.',
   },
   {
     img: '/images/web/maquinaria.jpg',

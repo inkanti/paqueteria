@@ -152,7 +152,11 @@ export const SHIPMENTS: Shipment[] = [
 export const FAQS = [
   {
     q: '¿Cuánto cuesta el envío por libra?',
-    a: 'El envío por avión tiene una tarifa fija de $10.00 por libra (ya incluye aranceles aduanales). Para envíos marítimos y por caja, la tarifa depende del volumen: escribinos por WhatsApp y te cotizamos al instante.',
+    a: 'El envío por avión tiene una tarifa fija de $10.00 por libra (ya incluye aranceles aduanales). Excepciones: los documentos, la joyería de oro y los electrónicos (consolas de videojuegos, laptops, celulares, tablets y similares) NO se cobran por libra — se cotizan por artículo. Los electrodomésticos también se cotizan al momento, según la marca y si son nuevos o usados. Para envíos marítimos y por caja, escribinos por WhatsApp.',
+  },
+  {
+    q: '¿Puedo usar mi propia caja?',
+    a: '¡Claro! Aceptamos cualquier medida de caja que ya tengás, no solo los tamaños de la tabla. Traé tu caja a la bodega o pedí recolección a domicilio y te cotizamos según su tamaño.',
   },
   {
     q: '¿Puedo enviar un vehículo?',
