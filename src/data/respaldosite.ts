@@ -20,8 +20,8 @@ export const BUSINESS = {
   phoneSVHref: 'tel:+50378415801',
   whatsapp: 'https://wa.me/17202928478',
   facebook: 'https://facebook.com/alvarofloresencomiendaselsalvador',
-  instagram: 'https://instagram.com/',
-  email: 'info@alvaroflorescargo.com',
+  instagram: 'https://www.instagram.com/alvarofloresencomiendas/',
+  email: 'flores.alvaro@alvarofloresexpress.com',
   schedule: 'Salidas quincenales (aéreo y marítimo)',
 } as const;
 

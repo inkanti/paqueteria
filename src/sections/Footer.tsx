@@ -78,6 +78,12 @@ export default function Footer() {
                 {BUSINESS.phoneSV}
               </a>
             </li>
+            <li>
+              ✉️{' '}
+              <a href={`mailto:${BUSINESS.email}`} className="transition-colors hover:text-brand-yellow">
+                {BUSINESS.email}
+              </a>
+            </li>
             <li>🗓️ {BUSINESS.schedule}</li>
           </ul>
         </div>
